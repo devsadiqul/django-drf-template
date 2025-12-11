@@ -3,7 +3,7 @@
   "displayName": "Django DRF Project Starter Template",
   "publisher": "swesadiqul",
   "description": "Professional Django + DRF starter template with modular apps, API versioning, Docker support, and ready-to-use VS Code configuration.",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "icon": "icon.png",
   "main": "./extension.js",
   "license": "MIT",
