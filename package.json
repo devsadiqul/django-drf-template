@@ -3,8 +3,8 @@
   "displayName": "Django DRF Project Starter Template",
   "publisher": "swesadiqul",
   "description": "Professional Django + DRF starter template with modular apps, API versioning, Docker support, and ready-to-use VS Code configuration.",
-  "version": "1.0.0",
-  "icon": "icon.png",
+  "version": "1.0.1",
+  "icon": "marketplace-icon.png",
   "main": "./extension.js",
   "license": "MIT",
   "repository": {
@@ -20,14 +20,28 @@
   },
   "categories": ["Other", "Snippets"],
   "keywords": ["django", "drf", "rest-framework", "template", "scaffolding"],
-  "activationEvents": [],
+  "activationEvents": ["*"],
   "contributes": {
     "commands": [
-      {
-        "command": "djangoDRF.scaffoldProject",
-        "title": "Django DRF: Scaffold New Project",
-        "category": "Django DRF"
-      }
-    ]
+      { "command": "djangoDRF.scaffoldProject", "title": "Django DRF: Scaffold Project" },
+      { "command": "djangoDRF.createApp", "title": "Django DRF: Create App" },
+      { "command": "djangoDRF.createSerializer", "title": "Django DRF: Create Serializer" },
+      { "command": "djangoDRF.createViewset", "title": "Django DRF: Create Viewset" },
+      { "command": "djangoDRF.createApiRoute", "title": "Django DRF: Add API Route" },
+      { "command": "djangoDRF.openDocs", "title": "Django DRF: Open Documentation" }
+    ],
+    "keybindings": [
+      { "command": "djangoDRF.scaffoldProject", "key": "ctrl+alt+d", "mac": "cmd+alt+d", "when": "editorTextFocus" }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        { "id": "djangoDRF", "title": "Django DRF", "icon": "sidebar-icon.svg" }
+      ]
+    },
+    "views": {
+      "djangoDRF": [
+        { "id": "djangoDRF.quickActions", "name": "Quick Actions" }
+      ]
+    }
   }
 }
