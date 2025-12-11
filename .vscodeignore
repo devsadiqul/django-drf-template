@@ -1,0 +1,16 @@
+# Exclude dev and large artifacts from VSIX
+.vscode/
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.vsix
+*.log
+*.sqlite3
+dist/
+out/
+coverage/
+*.env
+.git/
+tests/

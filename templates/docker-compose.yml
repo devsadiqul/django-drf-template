@@ -1,0 +1,14 @@
+# docker-compose.yml
+
+# Purpose:
+# - Defines and runs multi-container Docker applications.
+# - Includes 'web' service (Django app) and 'db' service (PostgreSQL database).
+# - Manages dependencies between services (web depends on db).
+# - Maps local ports to container ports.
+# - Mounts volumes for code persistence and database data persistence.
+# - Supports environment variables via .env file.
+
+# Notes:
+# - Makes development and deployment reproducible and isolated.
+# - Can be extended with more services like Redis, Celery, Nginx, etc.
+# - Recommended for both local development and production setups.

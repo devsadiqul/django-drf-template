@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual envs
+.env
+.env.*.local
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging / build
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+pip-wheel-metadata/
+wheels/
+*.whl
+
+# Test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.pytest_cache/
+coverage.xml
+nosetests.xml
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+/media
+/staticfiles
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# Node / VS Code extension
+node_modules/
+*.vsix
+.vscode-test/
+out/
+dist/
+.nyc_output/
+
+# Credentials / secrets
+*.pem
+*.key
+secrets.json
+.env
+
+# Python packaging tools
+.pyenv
+.pip/
+.pdm-python
+.pdm-build/
+__pypackages__/
+
+# Misc
+*.log
+*.sqlite3
+*.cache
+
+# Keep templates folder tracked (do not ignore)
+# templates/

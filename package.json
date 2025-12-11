@@ -1,0 +1,33 @@
+{
+  "name": "django-drf-template",
+  "displayName": "Django DRF Project Starter Template",
+  "publisher": "swesadiqul",
+  "description": "Professional Django + DRF starter template with modular apps, API versioning, Docker support, and ready-to-use VS Code configuration.",
+  "version": "1.0.4",
+  "icon": "icon.png",
+  "main": "./extension.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swesadiqul/django-drf-template.git"
+  },
+  "homepage": "https://github.com/swesadiqul/django-drf-template",
+  "bugs": {
+    "url": "https://github.com/swesadiqul/django-drf-template/issues"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Other", "Snippets"],
+  "keywords": ["django", "drf", "rest-framework", "template", "scaffolding"],
+  "activationEvents": [],
+  "contributes": {
+    "commands": [
+      {
+        "command": "djangoDRF.scaffoldProject",
+        "title": "Django DRF: Scaffold New Project",
+        "category": "Django DRF"
+      }
+    ]
+  }
+}
